@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>ピクセルパーフェクトコーディング課題</title>
+    <meta name="description" content="ピクセルパーフェクトコーディング課題として、ヘアサロン『FOREST』という架空のヘアサロンのランディングページを作成しました。">
+    <meta property="og:site_name" content="ヘアサロンFOREST">
+    <meta property="og:title" content="ピクセルパーフェクトコーディング課題">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://test007.members-dev.com/[ページのURL※1]">
+    <meta property="og:image" content="http://test007.members-dev.com/[サイトのOGP画像※1]">
+    <meta property="og:description" content="ピクセルパーフェクトコーディング課題として、ヘアサロン『FOREST』という架空のヘアサロンのランディングページを作成しました。">
+    <meta name="twitter:card" content="summary">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="container">
+    <header>
+        <div id="p_header">
+        <picture>
+            <source srcset="./assets/images/main-sp.png" media="(max-width:400px)"> 
+            <img src="./assets/images/main.png" alt="トップ画像" id="mainImage">
+        </picture>
+        <a href="#"><img src="./assets/images/logo2(white).svg" alt="ロゴ" id="logo"></a>
+        <div id="menu">
+            <button type="button" onclick="pushed()"></button>
+            <img src="./assets/images/menu.svg" alt="メニュー">
+            <nav>
+                <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">新着情報</a></li>
+                  <li><a href="#">通常メニュー</a></li>
+                  <li><a href="#">クーポン</a></li>
+                  <li><a href="#">STAFF一覧</a></li>
+                  <li><a href="#">BLOG</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="p_reserve">
+            <a href="#">24時間いつでもWEBで予約</a>
+            <div class="flex">
+                <h2><span class="square"></span>空席情報</h2>
+                <p><i class="fas fa-phone-alt phone"></i>03-6431-9451</p>
+            </div>        
+            <table>
+                <thead>
+                    <tr>
+                        <th class="red">3/22<br>（日）</th>
+                        <th class="subColor">3/23<br>（月）</th>
+                        <th>3/24<br>（火）</th>
+                        <th>3/25<br>（水）</th>
+                        <th>3/26<br>（木）</th>
+                        <th>3/27<br>（金）</th>
+                        <th class="red">3/28<br>（土）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="red">△</td>
+                        <td class="subColor">休</td>
+                        <td class="red">〇</td>
+                        <td class="red">〇</td>
+                        <td class="red">〇</td>
+                        <td class="red">〇</td>
+                        <td class="red">〇</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="p_hairStyle">
+            <h1>HAIR STYLE</h1>
+            <p>ヘアスタイル</p>
+            <img src="./assets/images/picture.png" alt="ヘアスタイル一覧">
+            <div><a href="#"><i class="fab fa-instagram instagram"></i>公式インスタグラムをチェック</a></div>
+            
+        </section>
+
+        <section id="p_info">
+            <h2><span class="square"></span>新着情報</h2>
+            <p>2020.03.20<br>【キャンペーン】fケアシャンプー10%OFF</p>
+            <p>2020.03.03<br>カットコンテスト準グランプリ獲得キャンペーン/全パーマメニュー15OFF（7月31日まで）</p>
+            <p>2020.02.29<br>【初回利用限定】ヘッドスパ25%OFF!</p>
+            <p><a href="#">more ></a></p>
+        </section>
+
+        <div id="wide">
+            <section id="p_coupon">
+                <p id="p_coupon_heading">FORESTを初めてご利用される方へ</p>
+                <div class="flex">
+                    <div class="p_coupon_newMember">
+                        <p class="left">
+                            <span class="fontSize12">【ご新規様限定】</span><br>
+                        カット（シャンプー付き）<br>
+                        <span class="fontSize16">¥3,500<span class="red">→¥2,000（税込）</span></span>
+                        </p>
+                        <div><a href="#">このクーポンで予約</a></div>
+                    </div>
+                    <div class="p_coupon_newMember">
+                        <p class="left">
+                            <span class="fontSize12">【ご新規様限定】</span><br>
+                        カット（シャンプー付き）+贅沢ナノスチームトリートメント<br>
+                        <span class="fontSize16">¥5,200<span class="red">→¥4,000（税込）</span></span>
+                        </p>
+                        <div><a href="#">このクーポンで予約</a></div>
+                    </div>
+                    <div class="p_coupon_newMember">
+                        <p class="left">
+                            <span class="fontSize12">【ご新規様限定】</span><br>
+                        カット（シャンプー付き）+カラー<br>
+                        <span class="fontSize16">¥7,500<span class="red">→¥6,000（税込）</span></span>
+                        </p>
+                        <div><a href="#">このクーポンで予約</a></div>
+                    </div>
+                </div>
+                <p class="right">
+                    <a href="#">通常メニューはこちら ></a>
+                    <a href="#">クーポン一覧 ></a>
+                </p>
+            
+            </section>
+        </div>
+
+        <section id="p_careVoice">
+            <div class="flex">
+                <div id="p_careVoice_care">
+                    <a href="#"><img src="./assets/images/care.png" alt="HAIR CARE"></a>
+                    <p><span>HAIR CARE</span><br>
+                        髪のツヤ・感触・カラー・パーマを美しく
+                    </p>
+                </div>
+                <div id="p_careVoice_voice">
+                    <a href="#"><img src="./assets/images/voice.png" alt="VOICE"></a>
+                    <p><span>VOICE</span><br>
+                        ご来店頂いているお客様の声
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="p_staff">
+            <h1>STAFF</h1>
+            <p>スタッフ</p>
+            <div class="flex">
+                <div>
+                    <picture>
+                        <img src="./assets/images/staff01.png" alt="代表　林">
+                    </picture>
+                    <p>代表<br>林</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="./assets/images/staff02.png" alt="ディレクター　鉄也">
+                    </picture>
+                    <p>ディレクター<br>鉄也</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="./assets/images/staff04.png" alt="スタイリスト　yuki">
+                    </picture>
+                    <p>スタイリスト<br>yuki</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="./assets/images/staff03.png" alt="スタイリスト　kozu">
+                    </picture>
+                    <p>スタイリスト<br>kozu</p>
+                </div>
+            </div>
+            <a href="#">STAFF一覧はこちら　></a>
+        </section>
+
+        <section id="p_access">
+            <a href="#"><img src="./assets/images/logo.png" alt="ロゴ"></a>
+            <p class="p_access_ruby">（フォレスト）</p>
+            <img id="p_signboard" src="./assets/images/forest.png" alt="お店の看板">
+            <p>〒141-0031 東京都品川区西五反田7-25-5　定休日：毎週月曜<br>JR五反田駅　徒歩10分</p>
+            <p id="p_acess_reserve"><a href="#">| 24時間いつでもWEB予約受け付け |</a></p>
+            <p>
+            <i class="fas fa-phone-alt phone"></i>03-6431-9451
+            <br>
+            <span class="min">（受付時間10:00-19:00)<br>
+                <a href="#"><i class="fab fa-instagram instagram"></i></a></span>
+            </p>
+        </section>
+        <section id="p_menu">
+            <nav>
+                <a href="#">HOME</a>&nbsp;|&nbsp;
+                <a href="#">新着情報</a>&nbsp;|&nbsp;
+                <a href="#">通常メニュー</a>&nbsp;|&nbsp;
+                <a href="#">クーポン</a>&nbsp;|&nbsp;
+                <a href="#">STAFF一覧</a>&nbsp;|&nbsp;
+                <a href="#">BLOG</a>
+            </nav>
+            
+        </section>
+    </main>
+    <footer>
+        <small>COPYRIGHT (C)FOREST CO_LTD_ALL RIGHTS RESERVED.</small>
+    </footer>
+    <script src="https://kit.fontawesome.com/a2ef97551c.js" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/main.js"></script>
+    </div>
+</body>
+
+</html>

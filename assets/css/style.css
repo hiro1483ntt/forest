@@ -1,0 +1,585 @@
+@charset "UTF-8";
+
+/*Foundation*/
+
+body {
+    margin: 0;
+}
+
+#container {
+    overflow: hidden;
+}
+
+body,
+header,
+main,
+footer,
+div,
+section,
+p,
+h1 {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+    text-align: center;
+    font-family: "游ゴシック", sans-serif;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Layout*/
+
+header {
+    max-width: 1088px;
+    width: 100%;
+    position: relative;
+    margin-bottom: -7px;
+}
+
+main {
+    max-width: 730px;
+    width: 100%;
+}
+
+footer {
+    height: 50px;
+    background-color: #323232;
+    font-size: 10px;
+    color: white;
+    padding-top: 16px;
+    margin-top: 58px;
+}
+
+
+/*Project*/
+
+#p_header #mainImage {
+    width: 100%;
+}
+
+#p_header #logo {
+    position: absolute;
+    top: 24.5px;
+    left: 14.2px;
+    width: 27.3%;
+}
+
+#p_header #menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 995;
+}
+
+#p_header #menu button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: 999;
+}
+
+#p_header #menu img {
+    position: absolute;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+#p_header #menu nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 236px;
+    padding: 64px 0 32px 0;
+    z-index: 996;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+}
+
+#p_header #menu nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#p_header #menu nav li {
+    margin-bottom: 26px;
+}
+
+#p_header #menu nav li a {
+    color: white;
+}
+
+#p_reserve {
+    margin-top: 48px;
+}
+
+#p_reserve p {
+    margin: auto 0;
+}
+
+#p_reserve a {
+    background-color: #5DC1CF;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 5px;
+    height: 48px;
+    width: 730px;
+    font-size: 18px;
+}
+
+#p_reserve .flex {
+    margin-top: 7px;
+}
+
+#p_reserve table {
+    font-size: 12px;
+    width: 100%;
+    height: 79px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#p_reserve table th,
+#p_reserve table td {
+    border: solid 1px #C3C3C3;
+    height: 38px;
+    padding: 0;
+    font-weight: normal;
+}
+
+#p_hairStyle {
+    margin-top: 47px;
+}
+
+#p_hairStyle p {
+    font-size: 12px;
+    margin: -3px;
+}
+
+#p_hairStyle img {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+#p_hairStyle div {
+    border: solid 2px #5DC1CF;
+    width: 343px;
+    height: 48px;
+    margin-top: -7px;
+}
+
+#p_hairStyle div a {
+    display: table-cell;
+    width: 343px;
+    height: 48px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#p_info {
+    margin-top: 48px;
+}
+
+#p_info p {
+    border-bottom: 1px #F0F0F0 solid;
+    padding-bottom: 13px;
+    margin-bottom: 12px;
+}
+
+#p_info p,
+#p_info h2 {
+    text-align: left;
+}
+
+#p_info a {
+    color: #5DC1CF;
+}
+
+#p_info :last-child {
+    text-align: right;
+    border-bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#p_info time {
+    font-size: 12px;
+}
+
+#p_coupon {
+    margin-top: 43px;
+    height: 338px;
+    padding: 30px 0;
+}
+
+#p_coupon #p_coupon_heading {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+#p_coupon a {
+    color: #5DC1CF;
+    margin-top: 32px;
+    margin-left: 20px;
+}
+
+#p_coupon .flex {
+    margin-bottom: 32px;
+}
+
+#p_coupon .p_coupon_newMember {
+    border-radius: 5px;
+    background-color: white;
+    width: 209px;
+    height: 176px;
+    margin-top: 0px;
+    padding: 12px;
+    margin: 0;
+    padding-top: 9px;
+    position: relative;
+}
+
+#p_coupon .p_coupon_newMember .fontSize16 {
+    font-size: 14px;
+}
+
+#p_coupon .p_coupon_newMember p {
+    margin: 0;
+}
+
+#p_coupon .p_coupon_newMember div {
+    margin: 0 auto;
+    width: 155px;
+    background-color: #5DC1CF;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#p_coupon .p_coupon_newMember a {
+    background-color: #5DC1CF;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 5px;
+    height: 32px;
+    width: 198px;
+}
+
+#p_careVoice {
+    margin-top: 60px;
+}
+
+#p_careVoice #p_careVoice_care {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    max-width: 343px;
+    max-height: 130px;
+}
+
+#p_careVoice #p_careVoice_care p {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 12px;
+}
+
+#p_careVoice #p_careVoice_care p span {
+    font-size: 36px;
+}
+
+#p_careVoice #p_careVoice_voice {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    max-width: 343px;
+    max-height: 130px;
+    outline: 1px solid #5DC1CF;
+    outline-offset: -1px;
+}
+
+#p_careVoice #p_careVoice_voice p {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    bottom: 50%;
+    left: 70%;
+    transform: translate(-50%, 50%);
+    color: #707070;
+    font-size: 12px;
+}
+
+#p_careVoice #p_careVoice_voice p span {
+    font-size: 28px;
+    color: #5DC1CF;
+}
+
+#p_staff {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 344px;
+}
+
+#p_staff .flex {
+    margin-top: 12px;
+    margin-bottom: 21px;
+}
+
+#p_staff img {
+    width: 100%;
+}
+
+#p_staff p {
+    font-size: 10px;
+}
+
+#p_staff a {
+    display: table-cell;
+    border: solid 1px black;
+    height: 34px;
+    width: 344px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+#p_access {
+    max-width: 344px;
+    margin-top: 48px;
+}
+
+#p_access #p_signboard {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+#p_access a {
+    color: #5DC1CF;
+}
+
+#p_access #p_acess_reserve {
+    margin: 11px auto;
+}
+
+#p_menu {
+    margin-top: 41px;
+}
+
+#p_menu a {
+    color: black;
+}
+
+
+/*Utility*/
+
+br {
+    color: #F0F0F0;
+}
+
+.red {
+    color: #CC5777;
+}
+
+.black {
+    color: black;
+}
+
+.subColor {
+    color: #707070;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone {
+    font-size: 9px;
+    margin-right: 4px;
+}
+
+.instagram {
+    font-size: 26px;
+    margin-right: 4px;
+    color: black;
+}
+
+.min {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 34px;
+    font-family: "Times New Roman", serif;
+    font-weight: normal;
+    margin-bottom: -4px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.square {
+    display: inline-block;
+    background-color: black;
+    width: 4px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+#wide {
+    margin: 0 -200%;
+    padding: 0 200%;
+    background-color: #F0F0F0;
+}
+
+.fontSize12 {
+    font-size: 12px;
+}
+
+.fontSize16 {
+    font-size: 16px;
+}
+
+
+/*スマホ画面*/
+
+@media (max-width: 400px) {
+    #p_header #logo {
+        width: 160.43px;
+    }
+    #p_header #menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+    #p_header #menu nav {
+        width: 100%;
+        padding-bottom: 122px;
+        font-size: 24px;
+    }
+    main {
+        padding: 0 16px;
+    }
+    #p_reserve {
+        margin-top: 40px;
+    }
+    #p_hairStyle {
+        margin-top: 20px;
+    }
+    #p_hairStyle img {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+    }
+    #p_hairStyle div {
+        width: 100%;
+    }
+    #p_info {
+        margin-top: 20px;
+    }
+    #p_info p {
+        line-height: 1.5em;
+    }
+    #p_coupon {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 16px;
+    }
+    #p_coupon #p_coupon_heading {
+        margin-bottom: 15px;
+    }
+    #p_coupon .flex {
+        display: block;
+    }
+    #p_coupon .p_coupon_newMember {
+        width: calc(100% - 32px);
+        height: auto;
+        margin: 0 16px 16px 16px;
+        margin-bottom: 12px;
+    }
+    #p_coupon .p_coupon_newMember div {
+        position: static;
+        transform: none;
+        width: 198px;
+    }
+    #p_coupon .right {
+        margin-right: 16px;
+    }
+    #p_careVoice {
+        margin-top: 40px;
+    }
+    #p_careVoice .flex {
+        display: block;
+    }
+    #p_careVoice img {
+        width: 100%;
+    }
+    #p_careVoice #p_careVoice_voice {
+        margin-top: 20px;
+    }
+    #p_access {
+        margin-top: 20px;
+    }
+    #p_access #p_signboard {
+        width: 200px;
+    }
+    #p_staff {
+        margin-top: 20px;
+        width: 100%;
+    }
+    #p_staff .flex {
+        margin-bottom: 14px;
+    }
+    #wide {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding: 0;
+    }
+    footer {
+        margin-top: 38px;
+    }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="menu" transform="translate(-2041)">
+    <rect id="bg" width="60" height="60" transform="translate(2041)" fill="#323232" opacity="0"/>
+    <line id="bar" x2="21" transform="translate(2061 36.52)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="bar-2" data-name="bar" x2="21" transform="translate(2061 30.21)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="bar-3" data-name="bar" x2="21" transform="translate(2061 22.48)" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+</svg>
